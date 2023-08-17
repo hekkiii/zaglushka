@@ -1,7 +1,7 @@
 package com.zaglushka.zaglushka;
 
 
-//Класс для метода GET,
+//Class for GET method
 public class Getting {
     private final long id;
     private final String content;
