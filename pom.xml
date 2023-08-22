@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.zaglushka</groupId>
 	<artifactId>zaglushka</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>v2.0.1</version>
 	<name>zaglushka</name>
 	<description>Zaglushka for LoadTesting</description>
 	<properties>
