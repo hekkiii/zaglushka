@@ -5,7 +5,7 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 public class Actions {
-    private static final String URL = "jdbc:postgresql://localhost:5432/testdb";
+    private static final String URL = "jdbc:postgresql://postgres:5432/testdb";
     private static final String dbUser = "postgres";
     private static final String dbPass = "test";
     private static final String table1 = "first";
