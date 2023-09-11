@@ -5,11 +5,11 @@ import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
 public class Actions {
-    private static final String URL = "jdbc:postgresql://URL:PORT/NAMEDB";
-    private static final String dbUser = "USERDB";
-    private static final String dbPass = "PASSWORDDB";
-    private static final String table1 = "TABLE1";
-    private static final String table2 = "TABLE2";
+    private static final String URL = "jdbc:postgresql://127.0.0.1:5432/testdb";
+    private static final String dbUser = "postgres";
+    private static final String dbPass = "test";
+    private static final String table1 = "first";
+    private static final String table2 = "second";
 
     public User selectUser(String login) throws SQLException {
         String sql = "SELECT * FROM " + table1 + " INNER JOIN " + table2 + " ON " + table1 + ".login1 = " + table2 +
