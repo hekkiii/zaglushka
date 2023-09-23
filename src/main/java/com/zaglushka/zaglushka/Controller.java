@@ -20,6 +20,8 @@ public class Controller {
             if (user == null){
                 throw new Exception();
             }
+            Files files = new Files();
+            files.FileIn(user.toString());
             return new ResponseEntity<>(user, HttpStatus.OK);
         } catch (Exception e){
             return new ResponseEntity<>("No such user", HttpStatus.INTERNAL_SERVER_ERROR);
@@ -41,5 +43,11 @@ public class Controller {
         } catch (SQLException e){
             return new ResponseEntity<>("Bad Request", HttpStatus.BAD_REQUEST);
         }
+    }
+
+    @GetMapping("/randuser")
+    public ResponseEntity<?> randomUser(){
+        Files files = new Files();
+        return new ResponseEntity<>(files.FileOut(), HttpStatus.OK);
     }
 }
